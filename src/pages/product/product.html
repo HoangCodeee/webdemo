@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="../../assets/css/style.css">
+          <link rel="stylesheet" href="../../assets/css/product.css">
+          <title>VSilver</title>
+      </head>
+      <body class="home">
+        <header>
+            <nav>
+                <ul class="home-nav-list">
+                    <li>Shine in Simplicity, Sparkle in Silver.</li>
+                    <li><a href="../../pages/home/index.html"><img src="../../assets/images/icon/logohome1.png" alt="VSilver Logo"></a></li>
+                    <li><div class="home-dd-menu">
+                        <a href="../../pages/product/product.html" class="home-dd-menu-btn">PRODUCT</a>
+                        <div class="home-dd-menu-content">
+                            <a href="product.html?type=ring">Ring</a>
+                            <a href="product.html?type=necklace">Necklace</a>
+                            <a href="product.html?type=earring">Earrings</a>
+                            <a href="product.html?type=bracelet">Bracelet</a>
+                          </div>
+                    </div></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Filter Section -->
+            <section class="product-page__filter filter">
+                <h2 class="filter__title">Filter by Category</h2>
+                <select id="filter-type">
+                    <option value="all">All</option>
+                    <option value="ring">Rings</option>
+                    <option value="necklace">Necklaces</option>
+                    <option value="bracelet">Bracelets</option>
+                    <option value="earring">Earrings</option>
+                  </select>
+            </section>
+
+            <section class="product-page__products">
+                <div id="product-grid" class="products__grid"></div>
+
+            <!-- Pagination -->
+                <div id="pagination" class="products__pagination">
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2023 VSilver. All rights reserved.</p>
+        </footer>
+            <script src="../../assets/js/product-data.js"></script>
+            <script src="../../assets/js/product-render.js"></script>
+      </body>
+      </html>
